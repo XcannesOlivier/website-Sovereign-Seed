@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Générateur Seed Phrase Crypto</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="works_on_smartphone">
+    <main class="container">
+      <h1>Sovereign Seed Phrase generator</h1>
+      <p
+        style="
+          font-size: 12px;
+          color: gray;
+          text-align: center;
+          margin-top: 10px;
+        "
+      >
+        * For security reasons, the Seed Phrase Generator does not work over
+        HTTP. You can use it online via HTTPS, or download the free offline
+        version to run it safely on your own device.
+      </p>
+
+      <!-- Switch langue -->
+      <div class="switch-row">
+        <label for="language">🌍 Language :</label>
+        <select id="language">
+          <option value="english">🇬🇧 English</option>
+          <option value="french">🇫🇷 Français</option>
+        </select>
+      </div>
+
+      <!-- Compatibilité blockchains -->
+      <div class="switch-row">
+        <label for="crypto">🌐 Blockchain compatibility:</label>
+        <p style="font-size: 14px; color: #000000; margin-top: 5px">
+          Compatible with
+          <strong>Bitcoin, Ethereum, XRP, Solana, Dogecoin, Dash</strong>, and
+          more...
+        </p>
+      </div>
+
+      <!-- Bloc choix mots -->
+      <section class="step-block">
+        <button id="openWordSelector">📝 Choose your words</button>
+        <button id="resetSelection">♻️ Reset</button>
+        <div id="wordListContainer"></div>
+        <div id="selectedWords" class="word-box">No words selected</div>
+      </section>
+
+      <!-- Génération de la suite -->
+      <section class="step-block">
+        <button id="completeSeed" disabled>
+          🔐 Complete the seed to 12 words
+        </button>
+        <div id="completedSeed" class="output-box">
+          Your complete seed will appear here ...
+        </div>
+      </section>
+      <section id="verify-seed">
+        <p>
+         Once you've generated your 12‑word seed, you can verify it using trusted tools:
+       <ul>
+        <li><a href="https://iancoleman.io/bip39/" target="_blank" rel="noopener noreferrer">Ian Coleman’s BIP39 Tool</a> (online / offline available)</li>
+        <li><a href="https://getcoinplate.com/bip39-seed-phrase-mnemonics-generator-offline-online-tool/?v=0b3b97fa6688" target="_blank" rel="noopener noreferrer">Coinplate Recoverer</a> (**offline version available** for safety)</li>
+        <li><a href="https://bip39.onekey.so/" target="_blank" rel="noopener noreferrer">OneKey BIP39 Tool</a> (online)</li>
+       </ul>
+       </p>
+       <p><em>Preferably, use offline versions to keep everything secure.</em></p>
+      </section>
+
+    </main>
+    <script src="wordlists/english.js"></script>
+    <script src="wordlists/french.js"></script>
+    <script src="js/bip39.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

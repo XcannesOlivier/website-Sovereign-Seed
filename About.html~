@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <link href="https://apply.holbertonschool.com/level2/school.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="behavior.js"></script>
+    <title>
+      Sovereign Seed About
+    </title>
+  </head>
+  <body class="works_on_smartphone">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0"></script>
+    <header>
+     <div class="right">
+       <div class="fb-share-button" data-href="http://13.38.99.192/About.html" data-layout="" data-size=""><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F13.38.99.192%2FAbout.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+       <a href="https://t.me/share/url?url=http://13.38.99.192/index.html&text=Check\                                                                                                      
+                this out!"
+	  target="_blank"
+	  style="position: relative; top: -3px; margin-left:4px; padding:2px 7px; background:#0088cc; color:white; border-radius:6px;">Telegram
+       </a>
+       
+       </div>
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="tweets.html">Tweets</a></li>
+	  <li><a href="Features.html">Features</a></li>
+	</ul>
+    </header>
+    <main>
+      <article>
+	<h1>Welcome to Sovereign Seed</h1>
+	<h2>Your keys, your power</h2>
+	<h3>Why sovereignty matters</h3>
+	<img
+	   src="https://isomer-user-content.by.gov.sg/85/cc2441bb-af64-41f8-ab87-1951638c10c2/Not_just_crypto___Blockchain_uses_you_might_not_have_heard_of.jpeg"
+	  id="smart_thumbnail"
+	  class="small">
+
+	<p>This is a paragraph.</p>
+	<p>This paragraph has <strong>a stronger part</strong> and <em>an emphasized part</em>.</p>
+	<p>This is a paragraph with a
+	  <a href="https://apply.holbertonschool.com">clickable link</a>.</p>
+	<p>Here is an image: <img src="https://apply.holbertonschool.com/holberton-logo.png">.</p>
+	<p>
+	  Here is a clickable image:
+	  <a href="https://apply.holbertonschool.com">
+	    <img src="https://apply.holbertonschool.com/holberton-logo.png">
+	  </a>.
+	</p>
+      </article>
+
+      <aside>
+	<div id="disqus_thread"></div>
+	<script>
+	  /**
+	  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+	  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+	  /*
+	  var disqus_config = function () {
+	  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+	  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	  };
+	  */
+	  (function() { // DON'T EDIT BELOW THIS LINE
+	  var d = document, s = d.createElement('script');
+	  s.src = 'https://sovereign-seed.disqus.com/embed.js';
+	  s.setAttribute('data-timestamp', +new Date());
+	  (d.head || d.body).appendChild(s);
+	  })();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </aside>
+    </main>
+    
+    <footer>
+      <p>Made by Olivier Desruelle for <a href="https://apply.holbertonschool.com" target="_blank">Holberton School</a>.</p>
+    </footer>
+    
+  </body>
+  </html>

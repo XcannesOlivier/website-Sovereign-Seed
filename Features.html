@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link href="school.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="behavior.js"></script>
+    <title>Sovereign Seed Features</title>
+  </head>
+  <body class="works_on_smartphone">
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v23.0"
+    ></script>
+    <header>
+      <div class="right">
+        <div
+          class="fb-share-button"
+          data-href="http://13.38.99.192/tweets.html"
+          data-layout=""
+          data-size=""
+        >
+          <a
+            target="_blank"
+            href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F13.38.99.192%2FFeatures.html&amp;src=sdkpreparse"
+            class="fb-xfbml-parse-ignore"
+            >Share</a
+          >
+        </div>
+        <a
+          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          class="twitter-share-button"
+          data-show-count="false"
+          >Tweet</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+        <a
+          href="https://t.me/share/url?url=http://13.38.99.192/Features.html&text=Check\                                                                                                      
+                this out!"
+          target="_blank"
+          style="
+            position: relative;
+            top: -3px;
+            margin-left: 4px;
+            padding: 2px 7px;
+            background: #0088cc;
+            color: white;
+            border-radius: 6px;
+          "
+          >Telegram
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tweets.html">Tweets</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </header>
+    <main>
+      <article>
+        <h1>"Welcome to Sovereign Seed"</h1>
+        <div class="spacer-text-hiw"></div>
+        <h3>Bip-39 Technology Explained:</h3>
+        <div class="spacer"></div>
+
+        <h2>1.The Official List of 2048 BIP‑39 Words</h2>
+        <p class="text-text">he BIP‑39 standard is based <a href="https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md" class="wordslist-link" target="_blank">
+        an official list of 2048 words
+       </a>
+        available in several languages (English, French, Spanish, and others).</p>
+
+        <p class="text-text">These words were <strong>‑defined in advance: They are arranged
+        alphabetically.</strong>They are also numbered from 0 to 2047 in that
+        <strong>alphabetical order.</strong>.Each word was assigned the <strong>number of its position</strong>
+        in the official BIP‑39 list.</p>
+
+        <p class="text-text">This number is then automatically converted
+        into an <a href="https://www.uptimia.com/fr/decimal-to-binary" class="bip-link" target="_blank">
+        11‑bit binary code
+       </a>
+        That binary code corresponds directly to the
+        word’s index in the list and is therefore unique for each word.</p>
+          👉 * A binary code is just a sequence of 1 and 0 that represents a number.
+
+        <p>
+        <div class="schema">
+          <div class="box">Word<br /><small>(ex: "vanish")</small></div>
+          <div class="arrow">➡</div>
+          <div class="box">Number<br /><small>(ex: 1930)</small></div>
+          <div class="arrow">➡</div>
+          <div class="box">binary code<br /><small>11110001010</small></div>
+        </div>
+        </p>
+        <p class="text-text">As you can see, <strong>the words are simply a human‑friendly </strong>way to represent a
+        predefined number. They make it easier for us to remember complex
+        information that would otherwise be just a long string of 0 and 1.</p>
+        <div class="spacer-text-hiw"></div>
+        <h2>2.Why 2048 words?</h2>
+
+        <p class="text-text">There are exactly 2048 words in the BIP‑39 list, because with 11 bits<strong> you get every possible combination of 0 and 1.</strong>
+        Each combination maps to a unique word.</p>
+
+        <p class="text-text">Think of it like the martingale<a href="https://www.investopedia.com/terms/m/martingalesystem.asp" class="martingale-link" target="_blank">
+        matingale
+       </a> in gambling:</p>
+
+        <ul class="martingale">
+        <li>1 bit → 2 possibilities</li>
+        <li>2 bits → 4 possibilities</li>
+        <li>3 bits → 8 possibilities</li>
+        <li>4 bits → 16 possibilities</li>
+        <li>…</li>
+        <li>11 bits → 2048 possibilities</li>
+        </ul>
+        <p class="text-text">
+        👉 Just like in a casino: every time you add a bit, the number of combinations doubles.
+        That’s why the list has 2048 words: one word for every possible combination, with none missing.
+        </p>
+        <div class="spacer-text-hiw"></div>
+        <h2>3. From Entropy to Words</h2>
+
+        <p class="text-text">
+        To create a 12‑word key, remember that each word represents 
+       <strong>11 boxes</strong>, each filled with either a 0 or a 1 — 
+       that’s <strong>132 boxes (bits) in total</strong>.
+       </p>
+
+       <p class="text-text">
+       Imagine you sit at your computer and press two keys at random: 
+       the <strong>0 key</strong> and the <strong>1 key</strong>, 
+       exactly <strong>128 times</strong>.
+       </p>
+
+      <p class="text-text">
+       👉 Result: you get a long sequence of 128 digits made only of 0 and 1. 
+      This is what we call<a href="https://www.ledger.com/fr/academy/topics/security/what-is-the-entropy" class="entropy-link" target="_blank">
+        entropy
+       </a>
+      </p>
+
+      <p class="text-text">
+      Then, this sequence is verified:
+      
+
+   <ul>
+    <li>A special calculation called <strong>SHA‑256</strong> is applied.</li>
+    <li>We take the <strong>first 4 digits</strong> of the result 
+      (which are also just 0 and 1).
+     These 4 digits are called the <strong>checksum</strong> </li>
+    <li>We add them at the end, making a total of <strong>132 digits</strong>.</li>
+   </ul>
+   </p>
+    <p class="text-text">
+     We then split this sequence into <strong>12 groups of 11 digits</strong>.  
+     Each group corresponds exactly to a word in the official list of 2048 words.
+    </p>
+
+    <p class="text-text">
+    👉 <strong>Bottom line:</strong>  
+    When you read a 12‑word seed phrase, you are actually reading 
+   <strong>132 keystrokes of 0 and 1</strong> on an invisible keyboard.
+   </p>
+   <div class="spacer-text-hiw"></div>
+   <p class="text-text">
+    Illustration:
+    <img src="img/bip39 explain.png" />
+   </p>
+
+<section>
+  <h2>Sovereign Seed Generator</h2>
+  <p class="text-text">
+    The <a href="index.html#generator-block" class="sovereign-link" target="_blank">
+    Sovereign Seed Generator </a>
+    project was designed to give users back a share of control in creating their keys. 
+    Unlike the traditional process where everything is generated automatically,</p>
+    
+    <p class="text-text">you choose your first <strong>5 words</strong> from the official BIP‑39 list. 
+    These 5 words already represent <strong>55 bits</strong> </p>
+    <p class="text-text">the equivalent of 55 keystrokes of 0 and 1 on an invisible keyboard. 
+    From there, our generator automatically completes the remaining words to reach the required 128 bits, computes the checksum 
+    using <strong>SHA‑256</strong>, and delivers a complete 12‑word phrase valid in any <a href="https://xaman.app/" class="wallet-link" target="_blank">
+        wallet.
+       </a>
+      </p>
+    <p class="text-text">way, you keep personal control over part of your seed, while the system ensures the validity and security of the rest, 
+    resulting in a universally recognized key that carries your own personal touch.</p>
+    <div class="spacer-text-hiw"></div>
+    <h2>5. Why Offline is Safer</h2>
+        <p class="text-text">
+          👉 Running the generator <strong>offline</strong> ensures the entropy and
+          generated seed phrase never leave your device.</p>
+           <p class="text-text">Online, you must use
+          <strong>HTTPS</strong> for security. This generator is designed not to
+          work over HTTP.
+        </p>
+  </p>
+</section>
+          <p class="text-text">The following is for information only: the <strong>Sovereign Seed Generator</strong> 
+          does not perform this step.</p> 
+          <p class="text-text">Now that you have your <strong>12 words</strong>, 
+          you can use them in any wallet. From there, it is the <strong>wallet</strong> 
+          or <strong>wallet provider</strong></p>
+          <p class="text-text">that generates the different addresses for each blockchain (Bitcoin, Ethereum, XRP, Solana, etc.), 
+          following what are called <em>derivation paths</em>.</p>
+          <p class="text-text">I won’t go into the details of these derivations here; 
+          I will cover them in my upcoming training sessions and future blog posts.</p>
+           
+        <hr class="separator" />
+        <div class="spacer-text-hiw"></div>
+         <h3> For now, just remember that your <strong>12 words are enough: the rest is automatically handled by the wallet you choose.</strong> </h3>
+
+         <div class="links-container">
+          <a
+            href="downloads/generator-seed-one-shot.zip"
+            download
+            class="download-link"
+          >
+            ⬇️ Download Offline Version (Free)
+          </a>
+
+          <a
+            href="https://paypal.me/OlivierDesruelle"
+            target="_blank"
+            class="donation-link"
+          >
+            <span class="heart">💖</span> Support the Project
+          </a>
+         </div>
+
+          <p class="note">
+          *Your support not only keeps Sovereign Seed alive, but also helps its
+          creator continue learning and building new tools.*
+          </p>
+          <div class="spacer-text-hiw"></div> 
+          <div class="usage-box">
+          <h3>How to Use the Sovereign Seed Phrase Generator</h3>
+          <div class="usage-steps">
+          <div class="usage-col">
+          <h4>💻 On Desktop</h4>
+          <p>
+           Works directly in your browser.<br>
+           Just open the folder and launch the generator.<br>
+           100% secure — online or offline.
+          </p>
+          </div>
+           <div class="usage-col">
+           <h4>📱 On Smartphone</h4>
+           <p>
+            1. Download a free HTML editor app<br>
+           from the Apple Store or Google Play.<br>
+           2. Open the folder in the app.<br>
+           3. Launch the generator — online or offline.
+          </p>
+        </div>
+       </div>
+      </div>
+          <p class="text-text">
+          This project is <strong>open source</strong>. View the code on GitHub:
+          </p>
+          <div class="links-container">
+         <a
+          href="https://github.com/XcannesOlivier/xcannes-public"
+          target="_blank"
+        >
+          <img
+            src="https://img.shields.io/badge/GitHub-Repo-blue?logo=github"
+            alt="GitHub Repo"
+          />
+         </a>
+         <a
+            href="generator-seed-one-shot/README.md"
+            target="_blank"
+            class="README-link"
+          >
+         Clic README.md (User Manual)
+          </a>
+         </div>
+         <div class="spacer-text-hiw"></div>
+
+
+        <p class="text-text"> 👉 <strong>Thank you sincerely </strong>for taking the time to follow me this far.</p>
+        <p class="text-text">Your interest and attention mean a lot to me.</p>
+        <p class="text-text">I hope these explanations helped you better understand how a seed phrase works and the vision behind the <strong>Sovereign Seed Generator project.</strong></p>
+        <p class="text-text">This is only the beginning: more explanations, training, and tools are coming soon. In the meantime, 
+          <strong>thank you for your trust and your support.</strong></p>
+
+        <hr class="separator" />
+        <div class="spacer-text-hiw"></div>
+        <p class="text-text">
+          Click "Holberton School" to join us !:
+          <a href="https://apply.holbertonschool.com">
+            <img src="https://apply.holbertonschool.com/holberton-logo.png" />
+          </a>
+        </p>
+
+        <p class="text-text">
+          <strong>Holberton is not your typical school.</strong></p>
+          <p class="text-text">Founded in the heart of Silicon Valley,
+          <em>Holberton School</em> stands out with its ambition to make
+          top‑quality tech education accessible to everyone,</p>
+          <p class="text-text"><em>with no prerequisites</em>. In response to the growing global
+          demand for IT talent, our
+          <strong>hands‑on,</p>
+          <p class="text-text">project‑based learning approach</strong> ensures
+          that students achieve successful career placement right after
+          graduation.
+        </p>
+
+        
+          <p style="
+            font-size: 12px;
+            color: gray;
+            text-align: center;
+            margin-top: 10px;
+          "
+        >
+          <strong>Disclaimer:</strong> I am not an employee of Holberton School.
+          I am simply a candidate applying for their training programs.
+          I personally believe that their
+          <em>startup‑style, group‑based learning approach</em>
+          is an excellent way to learn quickly and effectively.
+          For official information, please visit the Holberton School website.
+         
+        <p class="text-text">
+          More informations "about Holberton School" !
+          <a href="https://apply.holbertonschool.com">Welcome !</a>
+        </p>
+        <hr class="separator" />
+        <div class="spacer-text-hiw"></div>
+        <section class="about-me">
+          <h2>👋 About Me</h2>
+          <p class="text-text">Hi, my name is <span class="olivier-link"><strong>Olivier</strong></span></p> I created the
+            <strong>Sovereign Seed</strong> project as part of a knowledge and
+            skills test for admission into the Holberton School software
+            engineering program.
+          </p>
+          <p class="text-text">
+            If my test is validated, I plan to dedicate the next
+            <strong>two years</strong>
+            to an intensive training at Holberton School.This will give me the chance to learn more about a profession that truly inspires me, to deepen my skills, and above all, to experience what it means to work in startup mode, with a team.
+          </p>
+          <p class="text-text">
+            To make this possible, I am currently seeking
+            <strong>financial support</strong>
+            to help fund these two years of training. If you believe in this
+            project and would like to contribute, you can support me through the
+            donation link below.
+          </p>
+          <p class="text-text">In my second year, I plan to specialize in Artificial Intelligence — my true passion.</p>
+          <p class="text-text">
+            Thank you in advance for your support and for believing in this
+            journey. Every contribution, big or small, means a lot and brings me
+            one step closer to achieving my goal. 🙏
+          </p>
+
+
+          <p style="text-align: center; margin-top: 15px">
+            <a
+              href="https://paypal.me/OlivierDesruelle"
+              class="donate-link"
+              >💖 Support the Project</a
+            >
+          </p>
+        </section>
+
+        <div class="clickme-hint">⬇️ Click me !</div>
+        <img
+          src="https://raw.githubusercontent.com/XcannesOlivier/xcannes-public/refs/heads/main/Not_just_crypto___Blockchain_uses_you_might_not_have_heard_of.png"
+          id="smart_thumbnail"
+          class="small"
+        />
+        <div class="spacer"></div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: center;
+            border: 1px solid #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            margin: auto;
+            background-image: url('img/Xaman.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            height: 200px; /* ajuste la hauteur à ton image */
+          "
+        >
+          <h3 style="margin-top: 0">Support us with crypto</h3>
+          <a
+            href="xrp:rLENWD67h2KGoiPDXirnfbzfMWe3Y7dbGv"
+            class="donate-btn"
+            style="
+              display: inline-block;
+              background: #000000;
+              color: #fff;
+              padding: 12px 20px;
+              text-decoration: none;
+              border-radius: 8px;
+              font-weight: bold;
+              margin-top: auto;
+            "
+          >
+            Make a Donation
+          </a>
+        </div>
+        <p style="font-size: 12px; color: #ccc; margin-top: 8px">
+          * To use this feature, please download the
+          <a
+            href="https://xaman.app"
+            target="_blank"
+            style="color: #76b900; text-decoration: none"
+            >Xaman app</a
+          >
+          first.
+        </p>
+      </article>
+
+      <aside>
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+           *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
+	  var disqus_config = function () {
+	  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+	  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	  };
+	  */
+          (function () {
+            // DON'T EDIT BELOW THIS LINE
+            var d = document,
+              s = d.createElement("script");
+            s.src = "https://sovereign-seed.disqus.com/embed.js";
+            s.setAttribute("data-timestamp", +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript
+          >Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript"
+            >comments powered by Disqus.</a
+          ></noscript
+        >
+      </aside>
+    </main>
+
+    <footer>
+      <p>
+        Made by Olivier Desruelle for
+        <a
+          href="https://apply.holbertonschool.com"
+          target="_blank"
+          style="color: rgb(189, 10, 10); font-weight: bold"
+        >
+          Holberton School
+        </a>
+      </p>
+      <a
+        href="https://github.com/XcannesOlivier/xcannes-public"
+        target="_blank"
+      >
+        <img
+          src="https://img.shields.io/badge/GitHub-Repo-blue?logo=github"
+          alt="GitHub Repo"
+        />
+      </a>
+      <p style="margin-top:0px;text-align: center;">
+      <a href="#top" 
+       style="display:inline-block;
+            color:#fff;
+            padding:8px 12px;
+            font-size:15px;">
+    ↑ Back to top ↑
+      </a>
+      </p>
+    </footer>
+  </body>
+</html>

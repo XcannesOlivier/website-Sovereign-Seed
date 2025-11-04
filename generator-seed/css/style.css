@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #000000;
+  background: #0c0263;
   padding: 20px;
   margin: 0;
 }
@@ -12,6 +12,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   border: 1px;
+  margin-top: 60px;
 }
 
 h1 {
